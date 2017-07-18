@@ -1,0 +1,270 @@
+@font-face {
+    font-family: "Gotham-Light";
+    src: url(../fonts/Gotham-Light.otf) format("opentype");
+}
+@font-face {
+    font-family: "Gotham-Medium";
+    src: url(../fonts/Gotham-Medium.otf) format("opentype");
+}
+@font-face {
+    font-family: "Gotham-Book";
+    src: url(../fonts/Gotham-Book.otf) format("opentype");
+}
+
+#content{
+    background: url(../images/content-bg.jpg);
+}
+footer{
+    height: 241px;
+}
+.footer-content{
+    padding-top: 17px;
+}
+
+body{
+    color: #fff !important;
+    
+}
+
+h1{
+    font-family: "Gotham-Light";
+    font-size: 42px;
+}
+h2{
+    font-family: "Gotham-Medium";
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.custom-textbox{
+    
+    font-family: "Gotham-Medium";
+    font-size: 14px !important;
+    color: #4e555c !important;
+    width: 515px;
+    text-align: left;
+    border-radius: 50px;
+    height: 65px;
+}
+
+.input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn{
+    border-radius: 50px !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-right: none;
+    padding-left:13px;
+    height: 50px !important;
+}
+
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    font-size: 14px;
+    padding: 5px 9px;
+    background: #d68d00;
+    border: 1px solic green;
+    font-family: "Gotham-Medium";
+    margin-left: 15px;
+}
+.input-group-lg > .form-control{
+    border-radius: 50px !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.form-control,.input-group-addon,.input-group-lg > .form-control{
+    border:none;
+}
+
+.form-control{
+    font-size: 14px !important;
+    width: 445px !important;
+    font-family: "Gotham-Medium";
+    height: 65px !important;
+}
+
+.lbl-text{
+    font-family: "Gotham-Medium";
+    padding-left: 10px !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.more-cat{
+    margin:67px 0 0 86px;font-size:18px;
+    font-family: "Gotham-Book";
+}
+.more-cat a{
+    color:#fff;
+    text-decoration: underline;
+}
+.review-header{
+    font-family: "Gotham-Book";
+    font-size: 20px;
+}
+.review-star{
+    list-style-type: none;
+}
+.review-star li{
+    float:left;
+    margin-right: 5px;
+}
+
+.review-text{
+    font-family: "Gotham-Book";
+    font-style: italic;
+    font-size: 11px;
+}
+
+.review-lawyer{
+    font-size: 12px;
+    font-family: "Gotham-Medium";
+}
+
+.lawyer-name{
+    font-size: 13px;
+    font-family: "Gotham-Medium";
+}
+
+.lawyer-address{
+    font-size: 11px;
+}
+.read-more{
+    font-size: 10px;
+    font-family: "Gotham-Book";
+}
+.read-more a{
+    color: #fbd243;
+}
+
+.dropdown-menu{
+    border-radius:20px;
+    width: 515px;
+    padding:20px;
+    font-family: "Gotham-Medium";
+    font-size: 14px;
+}
+
+.dropdown-menu > li > a{
+    color: #5a5d60;
+    padding:10px 0 10px 55px;
+}
+
+.dropdown-menu > li > a:hover{
+    color: #000;
+    background: #bcd3e3;
+    font-weight: bold;
+}
+
+#results > ul li{
+    margin-left:-90px !important;
+}
+
+.close-modal{
+    font-family: "Gotham-Book";
+    font-size: 30px !important;
+}
+
+.modal-botton {
+    font-family: "Gotham-Book";
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 20px 40px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #02377b;
+    text-transform: uppercase;
+
+}
+
+.modal-head-title{
+    margin-left:20px;
+    font-family: "Gotham-Book";
+    font-size: 18px;
+    color: #4e555c;
+}
+
+.modal-head-title-other{
+    margin-left:20px;
+    font-family: "Gotham-Medium";
+    font-size: 21px;
+    color: #2b2c2d;
+}
+.modal-head-sub-title-other{
+    margin-left:20px;
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    color: #000;
+    display: block;
+    margin-top:12px;
+}
+
+.my-checkbox input{
+    vertical-align: middle;
+}
+.my-checkbox{
+    font-size: 14px;
+    font-family: "Gotham-Book";
+    display: block;
+    margin-top: 27px;
+}
+.my-checkbox span{
+    margin-left:17px;
+    margin-top: -10px !important;
+}
+
+.other-category{
+    list-style-type: none;
+    padding-left:20px;
+    font-size:14px;
+}
+
+.other-category li{
+    margin-top: 13px;
+}
+
+.modal-head-title-review{
+    color: #000;
+    font-size: 24px;
+    font-family: "Gotham-Book";
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.my-hr{
+    margin-top: 17px;
+    border-bottom: 1px solid #000;
+}
+.review-modal-lawyer-name{
+    font-family: "Gotham-Book";
+    font-size: 30px;
+}
+.review-modal-lawyer-type{
+    font-family: "Gotham-Book";
+    font-size: 16px;
+    
+}
+
+.review-modal-lawyer-address{
+    font-family: "Gotham-Book";
+    font-size: 16px;
+    color: #979da3;
+}
+.overall-review{
+    
+}

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LegalMatch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header container">
+            <img src="images/header.jpg" alt="LegalMatch">
+        </header>
+        <!-- END HEADER -->
+        <!-- PAGE CONTENT -->
+        <div id="content">
+            <div class="container">
+                <!-- LEFT CONTENT -->
+                <div class="col-md-12" style="padding-left:10px">
+                    <h1>Find a Lawyer for your Legal Issue</h1>
+                    <h2>Fast, Free and Confidential</h2>
+                </div>
+                
+                <div class="col-md-6 row">
+                    <div style="height:42px"></div>
+                    <div class="col-md-12 lbl-text">Enter Zip Code or City:</div>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-addon" style="background:#fff" id="sizing-addon1">
+                            <span class="circle" style="color:#fff;padding:5px 11px">1</span>
+                        </div>
+                        <input name="zip" id="zip" type="text" style="padding:28px 28px 28px 0;height:66px !important" class="form-control" placeholder="Does not have to be where you live" aria-describedby="sizing-addon1">
+                    </div>
+                    <div style="height:30px"></div>
+                    <div class="col-md-12 lbl-text">Choose a category:</div>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle custom-textbox" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="circle" style="color:#fff">2</span>
+                            <span style="margin-left:13px">Click to choose a legal category</span>
+                            <span class="caret pull-right" style="margin:6px 15px"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">Family</a></li>
+                            <li><a href="#">Criminal Defense</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Personal Injury</a></li>
+                            <li><a href="#">Bankruptcy & Finances</a></li>
+                            <li><a href="#">Products & Services</a></li>
+                            <li><a href="#">Employment</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                            <li><a href="#">Immigration</a></li>
+                            <li><a href="#">Wills, Trusts & Estates</a></li>
+                            <li><a href="#">Government</a></li>
+                            <li><a href="#">Intellectual Property</a></li>
+                        </ul>
+                    </div>
+                    <div class="more-cat">Can’t find your category? <a href="#" data-toggle="modal" data-target="#myModalOther">Click here.</a></div>
+                </div>
+                <!-- END LEFT CONTENT -->
+                <!-- RIGHT CONTENT -->
+                <div class="col-md-6" style="padding-right:0">
+                    <div style="margin-left:170px">
+                        <div for="" class="review-header">Clients review LegalMatch lawyers</div>
+                        <!-- REVIEW CONTENT -->
+                        <div class="row" style="margin-top:30px;">
+                            
+                            
+                            <div class="col-md-4" style="text-align:center">
+                                <img src="images/lawyer/image1.png" alt="">
+                                <div class="lawyer-name">
+                                    Mitchell M.
+                                </div>
+                                <div class="lawyer-address">
+                                    Cherry Hill, NJ
+                                </div>
+                            </div>
+                            <div class="col-md-8" style="padding:0">
+                                <div style="float:left" class="review-lawyer">Family Law</div>
+                                <div style="margin-right:24px;display:inline">
+                                    <ul class="review-star" style="float:left">
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                <div style="clear:both"></div>
+                                <p class="review-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</p>
+                                <div class="read-more pull-right"><a href="#" data-toggle="modal" data-target="#myModalReview1">Read Review</a>&nbsp;&nbsp;<img src="images/book.png" alt=""></div>
+                                
+                            </div>
+                            <div style="clear:both;border-bottom:solid 1px #4e8fbd;padding-bottom:12px;margin-left:30px"></div>
+                            
+                            
+
+                        </div>
+                        <!-- END REVIEW CONTENT -->
+                        <!-- REVIEW CONTENT -->
+                        <div class="row" style="margin-top:30px;">
+                            
+                            
+                            <div class="col-md-4" style="text-align:center">
+                                <img src="images/lawyer/image2.png" alt="">
+                                <div class="lawyer-name">
+                                    Joel C.
+                                </div>
+                                <div class="lawyer-address">
+                                    Little Rock, AK
+                                </div>
+                            </div>
+                            <div class="col-md-8" style="padding:0">
+                                <div style="float:left" class="review-lawyer">Family Law</div>
+                                <div style="margin-right:24px;display:inline">
+                                    <ul class="review-star" style="float:left">
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                <div style="clear:both"></div>
+                                <p class="review-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</p>
+                                <div class="read-more pull-right"><a href="#" data-toggle="modal" data-target="#myModalReview2">Read Review</a>&nbsp;&nbsp;<img src="images/book.png" alt=""></div>
+                                
+                            </div>
+                            <div style="clear:both;border-bottom:solid 1px #4e8fbd;padding-bottom:12px;margin-left:30px"></div>
+                            
+                            
+
+                        </div>
+                        <!-- END REVIEW CONTENT -->
+                        <!-- REVIEW CONTENT -->
+                        <div class="row" style="margin-top:30px;margin-bottom:35px">
+                            
+                            
+                            <div class="col-md-4" style="text-align:center">
+                                <img src="images/lawyer/image3.png" alt="">
+                                <div class="lawyer-name">
+                                    Brigida R.
+                                </div>
+                                <div class="lawyer-address">
+                                    Dallas, TX
+                                </div>
+                            </div>
+                            <div class="col-md-8" style="padding:0">
+                                <div style="float:left" class="review-lawyer">Family Law</div>
+                                <div style="margin-right:24px;display:inline">
+                                    <ul class="review-star" style="float:left">
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        <li><img src="images/start-review.png" alt=""></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                <div style="clear:both"></div>
+                                <p class="review-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ...</p>
+                                <div class="read-more pull-right"><a href="#">Read Review</a>&nbsp;&nbsp;<img src="images/book.png" alt=""></div>
+                                
+                            </div>                            
+                            
+
+                        </div>
+                        <!-- END REVIEW CONTENT -->
+                    </div>
+                </div>
+                <!-- END RIGHT CONTENT -->
+            </div>
+        </div>
+        <!-- END PAGE CONTENT -->
+        <!-- MODAL REVIEW-->
+        <div class="modal fade" id="myModalReview1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="padding-top:0;">
+                    <div class="modal-header" style="border:none">
+                        <div class="modal-head-title-review" style="margin-left:22px">Client Reviews</div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-modal">&times;</span></button>
+                        <div class="my-hr" style="margin-left:22px;margin-right:22px"></div>
+                    </div>
+                    <div class="modal-body" style="color:#000;padding:0 35px;">
+                        <div class="col-md-2" style="padding-left:0">
+                            <img src="images/lawyer/image1.png" alt="">
+                        </div>
+                        <div class="col-md-10" style="padding-left:0">
+                            <div class="review-modal-lawyer-name">Mitchell M.</div>
+                            <div class="review-modal-lawyer-address">Cherry Hill, NJ</div>
+                            <div class="review-modal-lawyer-type">Family Law</div>
+                        </div>
+                        <div style="height:30px;clear:both"></div>
+  
+                        <div style="font-family:'Gotham-Book';font-size:24px;display:inline">
+                            Rating <div style="font-family:'Gotham-Book';font-size:18px;display:inline">(29 users)</div>
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2-gray.png" alt="">
+                        </div>
+                        <div class="my-hr" style=""></div>
+                        <div style="margin-top:25px;">
+                            <table>
+                                <tr>
+                                    <td class="col-md-10" style="padding-left:0"><b>Overall</b></td>
+                                    <td class="col-md-2" style="padding-left:0;padding-right:0">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-9" style="padding-left:0">Responded in a timely ;manner</td>
+                                    <td class="col-md-3" style="padding-left:0;padding-right:0">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-9" style="padding-left:0">Responded in a timely ;manner</td>
+                                    <td class="col-md-3" style="padding-left:0;padding-right:0">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-9" style="padding-left:0">Responded in a timely ;manner</td>
+                                    <td class="col-md-3" style="padding-left:0;padding-right:0">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-9" style="padding-left:0">Responded in a timely ;manner</td>
+                                    <td class="col-md-3" style="padding-left:0;padding-right:0">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                        <img src="images/start-review-gray.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                            <div style="font-family:'Gotham-Medium';font-size:14px;display:inline"></div>
+                        </div>
+                        <div class="my-hr" style=""></div>
+                        <div style="height:30px;clear:both"></div>
+  
+                        <div style="font-family:'Gotham-Medium';font-size:16px;display:inline">
+                            
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            <img src="images/start-review2.png" alt="">
+                            by Dexter Marchal, 06/10/2016
+                        </div>
+                        <p style="margin-top:10px">
+                            Deb did a great job. Got my bench warrant set aside ... was sure I was
+                            going to jail ... phew. Judge seemed to respect her and I got what I 
+                        </p>
+                    </div>
+                    <div style="height:55px;clear:both"></div>
+                    <div class="modal-footer" style="border:none;text-align:center;">
+                        <a href="#" class="pull-right" style="color:#0000ff" data-dismiss="modal">CLOSE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL REVIEW-->
+        <!-- MODAL -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border:none">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-modal">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>
+                                <span class="circle" style="color:#fff;padding:5px 11px">3</span>
+                                <span style="" class="modal-head-title">Which <b>Family law</b> issue(s) apply to your case?</span>
+                            </p>
+                        </div>
+                        <div style="color:#000;padding:10px 20px">
+                            <div class="col-md-6" style="padding-left:0">
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Adoptions</span>
+                                </label>
+
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Guardianship</span>
+                                </label>
+
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Paternity</span>
+                                </label>
+
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Paternity</span>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Adoptions</span>
+                                </label>
+
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Guardianship</span>
+                                </label>
+
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Paternity</span>
+                                </label>
+
+                                <label class="my-checkbox">
+                                    <input type="checkbox" style="width: 19px; height: 19px" value="Adoptions" id="check1"><span>Paternity</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height:55px;clear:both"></div>
+                    <div class="modal-footer" style="border:none;text-align:center;">
+                        <button type="button" class="modal-botton btn-primary">FIND A LAWYER NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+        <!-- MODAL OTHER CATEGORY-->
+        <div class="modal fade bs-example-modal-lg" id="myModalOther" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border:none">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="close-modal">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>
+                                <div class="modal-head-title-other">OTHER CATEGORIES</div>
+                                <div class="modal-head-sub-title-other">Choose the category that best fits your case</div>
+                            </p>
+                        </div>
+                        <div style="color:#000;padding:10px 0">
+                            <div class="col-md-6" style="padding-left:0">
+                                <ul class="other-category">
+                                    <li><a href="#">Abuse (Child, Domestic, Sexual)</a></li>
+                                    <li><a href="#">Agencies & Administration</a></li>
+                                    <li><a href="#">Automobile ( DUI, Crimes, Speeding )</a></li>
+                                    <li><a href="#">Automobiles ( Accidents, Insurance )</a></li>
+                                    <li><a href="#">Banking ( Business, Consumer )</a></li>
+                                    <li><a href="#">Bars & Restaurants</a></li>
+                                    <li><a href="#">Business Formation & Dissolution</a></li>
+                                    <li><a href="#">Children (Adoption, Custody, Support)</a></li>
+                                    <li><a href="#">Class Actions (Bad Drugs, Products)</a></li>
+                                    <li><a href="#">Commercial Law and Contracts</a></li>
+                                    <li><a href="#">Commercial Real Estate</a></li>
+                                    <li><a href="#">Constitutional Law</a></li>
+                                    <li><a href="#">Construction (Disputes, Liens)</a></li>
+                                    <li><a href="#">Categories Item Here</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="other-category">
+                                    <li><a href="#">Loremipsum Dolorsitamet,</a></li>
+                                    <li><a href="#">Lonsectetur Scingelit  (Baseererkj, Mereit)</a></li>
+                                    <li><a href="#">Miam Euvelit</a></li>
+                                    <li><a href="#">Mempor Auctor (Estiarma, Toeruslej)</a></li>
+                                    <li><a href="#">Nisultricies Dictumest.</a></li>
+                                    <li><a href="#">Ntfring Sodalelit (Aeeticl Restoustoust)</a></li>
+                                    <li><a href="#">Ntvarius Lectus & Congue</a></li>
+                                    <li><a href="#">Pellentesque</a></li>
+                                    <li><a href="#">Rigula Aliquamattis (Nestusotu, Wewreist)</a></li>
+                                    <li><a href="#">Set Tigulempor</a></li>
+                                    <li><a href="#">Sehicula Sedsitamet</a></li>
+                                    <li><a href="#">Seque Nesturre </a></li>
+                                    <li><a href="#">Tollis Gaurissed</a></li>
+                                    <li><a href="#">Tempor Auctor (Estiarma, Toeruslej)</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="border:none;text-align:center;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL OTHER CATEGORY -->
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content container">
+                <img src="images/my-footer.jpg" alt="">
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/myscript.js"></script>
+
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
